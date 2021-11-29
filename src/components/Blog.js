@@ -1,6 +1,5 @@
 import React from "react";
 import { TerminalIcon, BookOpenIcon } from "@heroicons/react/solid";
-import { testimonials } from "../data";
 
 export default function Blog() {
   return (

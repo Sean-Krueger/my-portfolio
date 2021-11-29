@@ -1,0 +1,12 @@
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+yarn.lock
+package-lock.json
+
+#Files
+/src/components/Testimonials.js
+/src/components/Blog.js

@@ -1,19 +1,39 @@
 
-import React from "react";
+import React, {useState} from "react";
 import emailjs from "emailjs-com";
 
+const initialState = {
+  name: '',
+  email: '',
+  message: ''
+};
+
 export default function Contact() {
+  const [state, setState] = useState(initialState);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setState(prevState => {
+      return {
+        ...prevState,
+        [name]: value
+      }
+    });
+  }
+
   function sendEmail(e) {
     e.preventDefault();
+    console.log({state});
 
-    emailjs.sendForm(
+     emailjs.sendForm(
       "service_wbtr7sg",
       "template_tlfk30d",
-       e.target, 
+       "#contactForm", 
        "user_bLnJS6svvXYydTmJQOjW5"
        ).then(res=>{
-         console.log(res)
-       }).catch(err=>console.log(err))
+         console.log({res});
+         setState(initialState);
+       }).catch(err=>console.log(err)) 
   }
 
   return (
@@ -37,7 +57,6 @@ export default function Contact() {
                 ADDRESS
               </h2>
               <p className="mt-1">
-                Durham Rd <br />
                 Sayville, NY 11782
               </p>
             </div>
@@ -51,11 +70,12 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
               </h2>
-              <p className="leading-relaxed">631-901-5732</p>
+              <p className="leading-relaxed">(573) 200-6641</p>
             </div>
           </div>
         </div>
         <form
+        id="contactForm"
           name="contact"
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
           onSubmit={sendEmail}
@@ -74,6 +94,8 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
+              value={state.name}
+              onChange={handleInputChange}
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
@@ -85,6 +107,8 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
+              value={state.email}
+              onChange={handleInputChange}
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
@@ -97,12 +121,15 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
+              value={state.message}
+              onChange={handleInputChange}
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
           </div>
           <button
             type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+             >
             Submit
           </button>
         </form>

@@ -15,7 +15,7 @@ export default function Skills() {
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
             In a field thats always adapting I try my best to continually grow my tech stack. 
-            Below are some of the technologies that I have had the pleaasure of working with thus far.
+            Below are some of the technologies that I have had the pleasure of working with thus far.
           </p>
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">

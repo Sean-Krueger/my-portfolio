@@ -23,9 +23,9 @@ export default function About() {
             <br className="hidden lg:inline-block" />I love bringing ideas to life.
           </h1>
           <p className="mb-8 leading-relaxed">
-            Breaking my leg inspired me to learn to how to code. Since then I've done remote work for small businesses, 
-            implemented UX designs in Figma for startups, and built custom applications for crypto projects. 
-            I'm naturally curious with caffeinated confidence and always looking to expand my skills on a new project.
+            When I broke my leg last year it inspired me to learn to how to code. Since then I've done remote work for small businesses, 
+            implemented UX designs in Figma for startups, and built custom applications for crypto enthusiasts. 
+            I'm naturally curious with a dose of caffeinated confidence and always searching for a way to enhance my skills as a developer.
             
             </p>
           <div className="flex justify-center">

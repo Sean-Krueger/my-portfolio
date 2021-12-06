@@ -20,16 +20,16 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "How To Host Your Portfolio Website",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
+      "",
+    image: "",
     name: "TBD",
     company: "TBD",
   },
   {
     quote:
       "Sean helped me create a unique splash page for our flagship product. He even helped the marketing team explain how the design was set up to encourage transactions through his call to action layout",
-    image: "https://randomuser.me/api/portraits/men/94.jpg",
-    name: "Ruben Alvarez",
+    image: "",
+    name: "",
   },
 ];
 
@@ -41,5 +41,5 @@ export const skills = [
   "Ruby on Rails",
   "Material UI",
   "AWS Cloud",
-  "API manipulation"
+  "API Consumption"
 ];

@@ -19,15 +19,13 @@ export const projects = [
 
 export const testimonials = [
   {
-    quote:
-      "",
+    quote:"",
     image: "",
     name: "TBD",
     company: "TBD",
   },
   {
-    quote:
-      "Sean helped me create a unique splash page for our flagship product. He even helped the marketing team explain how the design was set up to encourage transactions through his call to action layout",
+    quote: "Sean helped me create a unique splash page for our flagship product. He even helped the marketing team explain how the design was set up to encourage transactions through his call to action layout",
     image: "",
     name: "",
   },
@@ -41,5 +39,23 @@ export const skills = [
   "Ruby on Rails",
   "Material UI",
   "AWS Cloud",
-  "API Consumption"
+  "API Consumption "
+];
+
+export const blogs = [
+  {
+    name: "How to Deploy & Host A React App",
+    image: "./server.jpg",
+    url: "https://seankrueger.medium.com/how-to-deploy-host-a-react-app-7bb7ee3f2e4c"
+},
+{
+  name: "Using WordPress & React to create a Headless CMS Portfolio Website.",
+  image: "wordpress.jpg",
+  url: "https://seankrueger.medium.com/using-wordpress-react-to-create-a-headless-cms-portfolio-website-7997554c6e38"
+},
+{
+  name: "How To Scrape The Web With Ruby",
+  image: "scraper.jpg",
+  url: "https://seankrueger.medium.com/how-to-scrape-the-web-with-ruby-92eab79520ae"
+}
 ];

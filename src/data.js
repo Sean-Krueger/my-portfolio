@@ -46,16 +46,19 @@ export const blogs = [
   {
     name: "How to Deploy & Host A React App",
     image: "./server.jpg",
-    url: "https://seankrueger.medium.com/how-to-deploy-host-a-react-app-7bb7ee3f2e4c"
+    url: "https://seankrueger.medium.com/how-to-deploy-host-a-react-app-7bb7ee3f2e4c",
+    description: ""
 },
 {
   name: "Using WordPress & React to create a Headless CMS Portfolio Website.",
   image: "wordpress.jpg",
-  url: "https://seankrueger.medium.com/using-wordpress-react-to-create-a-headless-cms-portfolio-website-7997554c6e38"
+  url: "https://seankrueger.medium.com/using-wordpress-react-to-create-a-headless-cms-portfolio-website-7997554c6e38",
+  description: ""
 },
 {
   name: "How To Scrape The Web With Ruby",
   image: "scraper.jpg",
-  url: "https://seankrueger.medium.com/how-to-scrape-the-web-with-ruby-92eab79520ae"
+  url: "https://seankrueger.medium.com/how-to-scrape-the-web-with-ruby-92eab79520ae",
+  description: ""
 }
 ];
